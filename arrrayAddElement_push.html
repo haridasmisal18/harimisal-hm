@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let a=new Array();
+        a.push(100);
+        a.push(200);
+        a.push(300);
+        document.write("<h1> Before Remove </h1><br>");
+        for(let i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+        document.write("<h1>After Remove</h1>")
+        let value= a.pop();
+        document.write(" after remove " +value +"<br>" );
+        for(let i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+        a.push(300);
+        //join more than two elements
+        document.write("befrore join"+a);
+        let b=a.join("*");
+        document.write("<br>After join"+b);
+
+    </script>
+</body>
+</html>
